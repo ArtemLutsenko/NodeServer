@@ -51,6 +51,12 @@ app.get('/about', (rec, res) =>{
     })
 })
 
+app.get('/project',(rec, res) =>{
+    res.render('project.hbs',{
+        pageTitle: "Project page"
+    })
+})
+
 
 app.listen(port, ()=>{
     console.log(`Server is up on port ${port}`);
